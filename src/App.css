@@ -8,13 +8,16 @@
   border: 2px solid red;
   margin-left: 5rem;
   margin-right: 5rem;
- 
 }
+
 .previous__offer {
   cursor: pointer;
+  margin-left: 2rem;
+
 }
 .next__offer {
   cursor: pointer;
+  margin-right: 2rem;
 }
 /* 1st and last skeleton width */
 .Polaris-SkeletonTabs__Tab--short {
@@ -24,6 +27,10 @@
 /* center skeleton */
 .Polaris-SkeletonTabs__Tab--long {
   width: 19rem !important;
+}
+/* skeleton bottom-border */
+.Polaris-SkeletonTabs__Tabs {
+  border-bottom: none !important;
 }
 
 

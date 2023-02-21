@@ -19,12 +19,13 @@ export const AddToCart = () => {
   return (
    
     <Card title="">
+        
         <Stack distribution='equalSpacing'>
             <div className='previous__offer' onClick={previousOfferHandler}>
             <Stack>
             <Icon source={ChevronLeftMinor}       color="base"
                 />
-            <Text variant="bodyMd" as="p" fontWeight="semibold" >
+            <Text variant="bodyMd" as="p" >
                 Previous Offer
             </Text>
         
@@ -33,7 +34,7 @@ export const AddToCart = () => {
 
             <div className='next__offer' onClick={nextOfferHandler}>
             <Stack >
-            <Text variant="bodyMd" as="p" fontWeight="semibold">
+            <Text variant="bodyMd" as="p">
                 Next Offer
             </Text>
             <Icon source={ChevronRightMinor}       color="base"
@@ -42,6 +43,7 @@ export const AddToCart = () => {
             </div>
         
         </Stack>
+        
         
         <Stack distribution="center">
             
