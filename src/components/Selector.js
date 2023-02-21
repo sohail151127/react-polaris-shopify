@@ -14,7 +14,7 @@ export function SelectExample() {
 
   return (
     <Select
-      label="Date range"
+      label=""
       options={options}
       onChange={handleSelectChange}
       value={selected}

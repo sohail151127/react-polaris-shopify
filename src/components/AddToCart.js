@@ -9,35 +9,43 @@ import {ChevronRightMinor} from '@shopify/polaris-icons';
 
 
 export const AddToCart = () => {
+
+    const previousOfferHandler =()=>{
+        console.log("previousOffer:")
+    }
+    const nextOfferHandler =()=>{
+        console.log("nextOffer:")
+    }
   return (
    
     <Card title="" sectioned>
         <Stack distribution='equalSpacing'>
-        
-            <Stack >
+            <div className='previous__offer' onClick={previousOfferHandler}>
+            <Stack>
             <Icon source={ChevronLeftMinor}       color="base"
                 />
-            <Text variant="bodyMd" as="p">
+            <Text variant="bodyMd" as="p" fontWeight="semibold" >
                 Previous Offer
             </Text>
         
             </Stack>
-        
-        
+            </div>
+
+            <div className='next__offer' onClick={nextOfferHandler}>
             <Stack >
-            
-            <Text variant="bodyMd" as="p">
+            <Text variant="bodyMd" as="p" fontWeight="semibold">
                 Next Offer
             </Text>
             <Icon source={ChevronRightMinor}       color="base"
                 />
             </Stack>
+            </div>
         
         </Stack>
         
         <Stack distribution="center">
             
-            <SkeletonTabs count={3} />
+            <SkeletonTabs fullWidth count={3} />
             
         </Stack>
         
@@ -48,14 +56,16 @@ export const AddToCart = () => {
             </Text>
         </div>
         <div className='special__offer'>
-            <Text variant="bodyMd" as="p">
+            <Text variant="bodyMd" as="p" fontWeight="semibold">
                 Special Offer
             </Text>
         </div>
         
 
 {/* main lower body stack */}
+<div className='contain__both__columns'>
     <Stack distribution="fillEvenly">
+    
       <Card.Section>
     
     {/* .........1st stack.............. */}
@@ -63,25 +73,27 @@ export const AddToCart = () => {
         <Stack vertical>
             <div className="left__stack">
                 <div className='text_above_img'>
-                    <Text variant="bodyMd" as="p" alignment="center">
+                    <Text variant="bodyMd" as="p" fontWeight="semibold">
                         Our Most Demanding Formal Suit For Groom is Finally available
                     </Text>
                 </div>
-
+                <div className='img__div'>
                 <img className='img' src={abc} alt="abc" />
+                </div>
+                
             </div>
             
         </Stack>
-    
-        
       </Card.Section>
+
 
       <Card.Section>
 
    {/* ...........2nd stack ...............     */}
+        <div style={{border:"2px solid red"}}>
         <Stack vertical>
             <TextContainer spacing="tight">
-                <Text variant="headingMd" as="h2">
+                <Text variant="headingMd" as="h2" fontWeight="bold">
                     Animal Graphic T-Shirt
                 </Text>
                 <Stack>
@@ -124,17 +136,20 @@ export const AddToCart = () => {
         <div className='addButton'>
             <Button fullWidth>Add to Order</Button>
         </div>
+        
         <div className="skip__checkout" >
             <Button fullWidth monochrome outline>
                 Skip & Checkout
             </Button>
         </div>
         </Stack>
-        
+        </div>
       </Card.Section>
+      
     </Stack>
+</div>        
+
     </Card>
-        
    
   )
 }
