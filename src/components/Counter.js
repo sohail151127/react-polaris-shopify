@@ -4,7 +4,7 @@ import { Icon, Stack, Text } from '@shopify/polaris';
 import {CirclePlusOutlineMinor} from '@shopify/polaris-icons';
 
 export const Counter = () => {
-    const [counter,setCounter] = useState(0)
+    const [counter,setCounter] = useState(1)
 
     console.log("counter:",counter)
 
@@ -15,7 +15,7 @@ export const Counter = () => {
 
     const minusHandler =()=>{
         // console.log("minus:")
-        if(counter > 0){
+        if(counter > 1){
             setCounter(counter-1)
         }
         

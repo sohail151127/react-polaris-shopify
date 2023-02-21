@@ -120,6 +120,15 @@
   color: white;
 }
 
+.addButton .Polaris-Button--fullWidth:hover {
+  background-color: #8E5A30;
+  color: white;
+}
+
 .skip__checkout .Polaris-Button--monochrome.Polaris-Button--outline {
+  color: #8E5A30;
+}
+
+.skip__checkout .Polaris-Button--monochrome.Polaris-Button--outline:hover {
   color: #8E5A30;
 }

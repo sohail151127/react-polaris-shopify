@@ -18,7 +18,7 @@ export const AddToCart = () => {
     }
   return (
    
-    <Card title="" sectioned>
+    <Card title="">
         <Stack distribution='equalSpacing'>
             <div className='previous__offer' onClick={previousOfferHandler}>
             <Stack>
