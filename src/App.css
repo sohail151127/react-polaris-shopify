@@ -2,37 +2,77 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.cart__container {
+  border: 2px solid red;
+  margin-left: 5rem;
+  margin-right: 5rem;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.main__title{
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: black;
+  font-weight: Bolder;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.special__offer {
+  background-color: #8E5A30;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.text_above_img {
+  border: 2px solid blue;
+  padding-bottom: 0.5rem;
+}
+
+.img{
+  max-width: 100%;
+  height: auto;
+  border: 2px solid greenyellow;
+}
+
+.left__stack {
+  border:2px solid red;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.comparative__price .Polaris-Text--headingMd {
+  text-decoration: line-through;
+}
+
+.final__price .Polaris-Text--headingMd {
+  color: #8E5A30;
+}
+
+.savings__percentage .Polaris-Text--headingMd {
+  color: #8E5A30;
+}
+
+.readMore__link .Polaris-Link {
+  color: #8E5A30;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.addButton .Polaris-Button--fullWidth {
+  background-color: #8E5A30;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skip__checkout .Polaris-Button--monochrome.Polaris-Button--outline {
+  color: #8E5A30;
 }
